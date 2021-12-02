@@ -1,0 +1,29 @@
+
+{
+  "name": "代官山の家",
+  "date": "",
+  "year": "2006",
+  "purpose": "住宅",
+  "area": "東京",
+  "space": "53.3",
+  "categories": ["house"],
+
+  "images": [
+	{
+	  "src": "001.jpg",
+      "width": "1000",
+      "height": "707",
+      "outputWidth": "500",
+      "outputHeight": "353",
+      "aspect": "horizontal"
+	}
+  ],
+
+
+
+
+  "id": "138"
+}
+
+
+

@@ -1,0 +1,2307 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="actp" ng-controller="AppCtrl" id="ng-app">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+		<meta name="description" content="代官山の家、用途: 住宅、所在地: 東京、延床面積: 53.3平米" />
+	<meta property="og:title" content="代官山の家 - Nobuo Araki / The Archetype" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://actp.co.jp/works/138/index.html" />
+	<meta property="og:image" content="http://actp.co.jp/works/138/001.jpg" />
+	<meta property="og:description" content="代官山の家、用途: 住宅、所在地: 東京、延床面積: 53.3平米" />
+	<meta property="og:site_name" content="Nobuo Araki / The Archetype" />
+	<meta property="fb:app_id" content="291347887652503">
+
+	<script type="text/javascript" src="http://fast.fonts.com/jsapi/18fff9a8-a39c-41f8-890a-f4d1b5df2c6e.js"></script>
+	<link rel="stylesheet" href="/common/css/style.css" media="all" />
+	<link rel="stylesheet" href="/common/css/print.css" media="print" />
+
+	<link rel="apple-touch-icon-precomposed" href="/common/apple-touch-icon.png" />
+	<link rel="shortcut icon" href="/common/favicon.ico" />
+	<title ng-bind="windowTitle">
+
+
+代官山の家 -
+
+
+Nobuo Araki / The Archetype
+</title>
+
+	<!--[if lt IE 8]>
+    <script src="/common/js/vendor/json3.min.js"></script>
+    <![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	<script src="/common/js/vendor/angular-resource.min.js?201810011521"></script>
+	<script src="/common/js/vendor/jquery.scrollTo.js?201810011521"></script>
+	<script src="/common/js/vendor/jquery.sticky.js?201810011521"></script>
+	<script src="/common/js/vendor/hammer.js?201810011521"></script>
+	<script src="/common/js/vendor/jquery.hammer.js?201810011521"></script>
+	<script src="/common/js/vendor/jquery.cookie.js?201810011521"></script>
+	<script src="/common/js/app/site.js?201810011521"></script>
+	<script src="/common/js/app/app.js?201810011521"></script>
+	<script src="/common/js/app/appController.js?201810011521"></script>
+	<script src="/common/js/app/detailController.js?201810011521"></script>
+	<script src="/common/js/app/detailedListController.js?201810011521"></script>
+	<script src="/common/js/app/listController.js?201810011521"></script>
+	<script src="/common/js/app/newsController.js?201810011521"></script>
+	<script src="/common/js/app/service.js?201810011521"></script>
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29298155-1']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+  </head>
+  <body class="lang_ja">
+
+	<div id="capability_menu">
+
+  <h1>Nobuo Araki / The Archetype</h1>
+
+  <h2><a href="/works">Works</a></h2>
+  <h3>代官山の家</h3>
+<ul>
+
+<li>所在地: {"ja"=>"東京", "en"=>"Tokyo"}</li><li>用途: {"ja"=>"住宅", "en"=>"house"}</li><li>延床面積: 53.3</li>
+
+
+</ul>
+
+
+  <h2><a href="/products">Products</a></h2>
+
+  <h2><a href="/publications">Publications</a></h2>
+
+  <h2><a href="/about">About</a></h2>
+
+  <h2><a href="/news">News</a></h2>
+
+</div>
+
+
+	<ul id="container">
+	  <li>
+		<div class="mainTitleContainer">
+		  <span class="switch" ng-click="toggleCategories()"><span class="inner">Nobuo Araki / The Archetype</span></span>
+		  <div class="language">
+		    <span ng-hide="isTouchDevice()">
+		      <span ng-switch on="lang">
+			<p class="language_current" ng-switch-when="ja">Japanese</p>
+			<p class="language_current" ng-switch-when="en">English</p>
+		      </span>
+		      <ul class="language_menu">
+			<li ng-click="updateLang('ja')">Japanese</li>
+			<li ng-click="updateLang('en')">English</li>
+		      </ul>
+		    </span>
+		    <span ng-show="isTouchDevice()">
+		      <span ng-switch on="lang">
+			<p class="language_current" ng-switch-when="ja">JA</p>
+			<p class="language_current" ng-switch-when="en">EN</p>
+		      </span>
+		      <ul class="language_menu">
+			<li ng-click="updateLang('ja')">JA</li>
+			<li ng-click="updateLang('en')">EN</li>
+		      </ul>
+		    </span>
+		  </div>
+		</div>
+		<ul class="categories hide">
+		  <li ng-controller="WorksCtrl">
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="works_section_title">
+				  <span class="switch" ng-click="toggleList()"><span class="inner">Works</span></span>
+				  <div class="subcategory">
+					<p class="subcategory_current">{{currentFilterLabel}}</p>
+					<ul class="subcategory_menu">
+					  <li ng-click="filter(null)">All</li>
+					  <li ng-click="filter('house')">House</li>
+					  <li ng-click="filter('office')">Office</li>
+					  <li ng-click="filter('commercial')">Commercial</li>
+					  <li ng-click="filter('others')">Others</li>
+					</ul>
+				  </div>
+
+			  </div>
+			</div>
+			<ul id="works" class="branch hide" ng-controller="WorksDetailCtrl">
+
+			  <li ng-repeat="work in list"><!-- works配列の中身を取り出す -->
+				<div class="titleContainerBase">
+				  <div class="titleContainer" id="works_title_{{work.id}}">
+
+					  <span ng-switch on="work['nolink']">
+						<span ng-switch-when="true">
+						  <span class="switch-inactive">
+							<span class="inner">{{work.name}}</span>
+							<span class="year">{{work.year}}</span>
+						  </span>
+						</span>
+						<span ng-switch-default>
+						  <span class="switch" ng-click="toggleListDetail(work.id)">
+							<span class="inner">
+							  {{work.name}}
+							  <span class="loading" id="works_{{work.id}}_loading"><img src="/common/images/loading.gif" /></span>
+							</span>
+							<span class="year">{{work.year}}</span>
+						  </span>
+						</span>
+					  </span>
+
+				  </div>
+				</div>
+				<!-- 4階層目（Works詳細） -->
+				<div id="works_{{work.id}}" class="hide worksDetail">
+				  <ul class="leaves">
+					<li class="photo" ng-repeat="image in listDetails[work.id].images" style="width:{{image['outputWidth']}}px">
+					<div class="print_inner">
+					  <img ng-src="/works/{{work.id}}/{{image['src']}}" class="{{image['aspect']}}" width="{{image['outputWidth']}}" height="{{image['outputHeight']}}" original-width="{{image['width']}}" original-height="{{image['height']}}" onload="fixImageWidth(this)" />
+					  <p class="caption" ng-show="image['credit']">Photo: {{image['credit']}}</p>
+					</div>
+					</li>
+					<li class="description">
+					  <h2>{{listDetails[work.id].name}}</h2>
+					  <p class="lead" ng-bind-html-unsafe="listDetails[work.id].description"></p>
+					  <p class="meta">
+						<span ng-show="listDetails[work.id].area">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Place</span>
+							<span class="label" ng-switch-when="ja">所在地</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].area}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].purpose">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Purpose</span>
+							<span class="label" ng-switch-when="ja">用途</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].purpose}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].space">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Total floor</span>
+							<span class="label" ng-switch-when="ja">延床面積</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].space}}m&sup2;</span>
+						</span>
+						<span ng-show="listDetails[work.id].structure">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Structure</span>
+							<span class="label" ng-switch-when="ja">構造</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].structure}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].scale">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Scale</span>
+							<span class="label" ng-switch-when="ja">規模</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].scale}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].date">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Completion</span>
+							<span class="label" ng-switch-when="ja">竣工年</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].date}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].photographer">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Photo</span>
+							<span class="label" ng-switch-when="ja">写真</span>
+						  </span>
+						  <span class="note">{{listDetails[work.id].photographer}}</span>
+						</span>
+						<span ng-repeat="custom in listDetails[work.id].customs">
+						  <span class="label">{{custom['label']}}</span> <span class="note">{{custom['value']}}</span>
+						</span>
+						<span ng-show="listDetails[work.id].press">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="en">Magazines</span>
+							<span class="label" ng-switch-when="ja">掲載誌</span>
+						  </span>
+						  <span class="press">
+							<span ng-repeat="press in listDetails[work.id].press">
+							  <span ng-switch on="press['link']">
+								<span ng-switch-when="">
+								  {{press['date']}} {{press['name']}}<br />
+								</span>
+								<span ng-switch-default>
+									{{press['date']}} <a ng-href="{{press['link']}}" target="_blank">{{press['name']}}</a><br />
+								</span>
+							  </span>
+							</span>
+						  </span>
+						</span>
+					  </p>
+					</li>
+				  </ul>
+				</div>
+				<!-- /4階層目（Works詳細） -->
+			  </li>
+			</ul>
+		  </li>
+
+		  <li ng-controller="ProductsCtrl">
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="products_section_title">
+				<span class="switch" ng-click="toggleList()"><span class="inner">Products</span></span>
+			  </div>
+			</div>
+			<ul id="products" class="branch hide" ng-controller="ProductsDetailCtrl">
+			  <li ng-repeat="prod in list"><!-- products配列の中身を取り出す -->
+				<div class="titleContainerBase">
+				  <div class="titleContainer" id="products_title_{{prod.id}}">
+					<span ng-switch on="prod['nolink']">
+					  <span ng-switch-when="true">
+						<span class="switch-inactive"><span class="inner">{{prod.name}}</span></span>
+					  </span>
+					  <span ng-switch-default>
+						<span class="switch" ng-click="toggleListDetail(prod.id)">
+						  <span class="inner">{{prod.name}}</span>
+						</span>
+					  </span>
+					</span>
+				  </div>
+				</div>
+				<!-- 4階層目（Products詳細） -->
+				<div id="products_{{prod.id}}" class="hide">
+				  <ul class="leaves">
+					<li class="photo" ng-repeat="image in listDetails[prod.id].images">
+					  <img ng-src="/products/{{prod.id}}/{{image['src']}}" class="{{image['aspect']}}" width="{{image['outputWidth']}}" height="{{image['outputHeight']}}" original-width="{{image['width']}}" original-height="{{image['height']}}" onload="fixImageWidth(this)" />
+					</li>
+					<li class="description">
+					  <h2>{{listDetails[prod.id].name}}</h2>
+					  <p class="lead" ng-bind-html-unsafe="listDetails[prod.id].description"></p>
+					  <p class="meta">
+						<span ng-show="listDetails[prod.id].price">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="ja">価格</span>
+							<span class="label" ng-switch-when="en">Price</span>
+						  </span>
+						  <span class="note">{{listDetails[prod.id].price}}</span>
+						</span>
+						<span ng-show="listDetails[prod.id].size">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="ja">サイズ</span>
+							<span class="label" ng-switch-when="en">Size</span>
+						  </span>
+						  <span class="note">{{listDetails[prod.id].size}}</span>
+						</span>
+						<span ng-show="listDetails[prod.id].material">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="ja">素材</span>
+							<span class="label" ng-switch-when="en">Material</span>
+						  </span>
+						  <span class="note">{{listDetails[prod.id].material}}</span>
+						</span>
+						<span ng-show="listDetails[prod.id].distributor">
+						  <span ng-switch on="lang">
+							<span class="label" ng-switch-when="ja">販売元</span>
+							<span class="label" ng-switch-when="en">Seller</span>
+						  </span>
+						  <span class="note"><a ng-href="{{listDetails[prod.id].distributor_url}}">{{listDetails[prod.id].distributor}}</a></span>
+						</span>
+					  </p>
+					</li>
+				  </ul>
+				</div>
+				<!-- /4階層目（Products詳細） -->
+			  </li>
+			</ul>
+		  </li>
+
+		  <li ng-controller="PublicationsCtrl">
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="publications_section_title">
+				<span class="switch" ng-click="toggleList()"><span class="inner">Publications</span></span>
+			  </div>
+			</div>
+			<ul id="publications" class="branch hide" ng-controller="PublicationsDetailCtrl">
+
+			  <li ng-repeat="pub in list"><!-- publications配列の中身を取り出す -->
+				<div class="titleContainerBase">
+				  <div class="titleContainer" id="publications_title_{{pub.id}}">
+
+					<span ng-switch on="pub['nolink']">
+					  <span ng-switch-when="true">
+						<span class="switch-inactive"><span class="inner">{{pub.name}}</span></span>
+					  </span>
+					  <span ng-switch-default>
+						<span class="switch" ng-click="toggleListDetail(pub.id)">
+						  <span class="inner">{{pub.name}}</span>
+						</span>
+					  </span>
+					</span>
+
+					<!--<span class="switch" ng-click="toggleListDetail(pub.id)"><span class="inner">{{pub.name}}</span></span>-->
+				  </div>
+				</div>
+				<!-- 4階層目（Publications詳細） -->
+				<div id="publications_{{pub.id}}" class="hide">
+				  <ul class="leaves">
+					<li class="photo" ng-repeat="image in listDetails[pub.id].images">
+					  <img ng-src="/publications/{{pub.id}}/{{image['src']}}" class="{{image['aspect']}}" />
+					</li>
+					<li class="description">
+					  <h2>{{listDetails[pub.id].name}}</h2>
+					  <p class="meta">{{listDetails[pub.id].publisher}}</p>
+					  <p ng-bind-html-unsafe="listDetails[pub.id].content"></p>
+					</li>
+				  </ul>
+				</div>
+				<!-- /4階層目（Publications詳細） -->
+			  </li>
+			</ul>
+		  </li>
+
+		  <li ng-controller="AboutCtrl">
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="about_section_title">
+				<span class="switch" ng-click="toggleChild()"><span class="inner">About</span></span>
+			  </div>
+			</div>
+			<ul id="about" class="branch hide">
+			  <span ng-switch on="lang">
+				<li class="about" ng-switch-when="en" ng-include="'/en/about/partial.html'" />
+				<li class="about" ng-switch-when="ja" ng-include="'/about/partial.html'" />
+			  </span>
+			</ul>
+		  </li>
+
+		  <li ng-controller="NewsCtrl">
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="news_section_title">
+				<span class="switch" ng-click="toggleList()"><span class="inner">News</span></span>
+			  </div>
+			</div>
+			<ul id="news" class="branch hide"
+				ng-controller="NewsDetailCtrl" ng-init="setYear(2018)">
+			  <li ng-repeat="news in list.articles"><!-- news配列の中身を取り出す -->
+				<div class="titleContainerBase">
+				  <div class="titleContainer" id="news_title_{{news.id}}">
+					<span class="switch" ng-click="toggleListDetail(news.id)"><span class="inner">{{news.title}} ({{news.date}})</span></span>
+				  </div>
+				</div>
+				<!-- 4階層目（News詳細） -->
+				<div id="news_{{news.id}}" class="hide">
+				  <ul class="leaves">
+					<li class="photo" ng-repeat="image in listDetails[news.id].images">
+					<div class="print_inner">
+					  <img ng-src="{{listDetails[news.id].basePath}}/{{image['src']}}" class="{{image['aspect']}}" width="{{image['outputWidth']}}" height="{{image['outputHeight']}}" original-width="{{image['width']}}" original-height="{{image['height']}}" onload="fixImageWidth(this)" />
+					  <p class="caption" ng-show="image['credit']">Photo: {{image['credit']}}</p>
+					</div>
+					</li>
+					<li class="description">
+					  <p class="meta" ng-bind-html-unsafe="listDetails[news.id].body"></p>
+					</li>
+				  </ul>
+				</div>
+				<!-- /4階層目（News詳細） -->
+			  </li>
+			  <!-- news年号一覧 -->
+			  <li class="archive"
+				  ng-repeat="year in list.years" ng-controller="NewsYearlyListCtrl" ng-init="setYear(year); restore()">
+				<div class="titleContainerBase">
+				  <div class="titleContainer" id="news_years_{{year}}">
+					<span class="switch" ng-click="toggleYearlyList(year)">
+					  <span ng-switch on="lang">
+						<span class="inner" ng-switch-when="ja">{{year}}年</span>
+						<span class="inner" ng-switch-when="en">{{year}}</span>
+					  </span>
+					</span>
+				  </div>
+				</div>
+
+				<!-- 4階層目（年別News一覧） -->
+				<ul id="news_yearly_details_{{year}}" class="yearlyList branch hide"
+					ng-controller="NewsDetailCtrl" ng-init="setYear(year); restore()">
+				  <li ng-repeat="news in list"><!-- news配列の中身を取り出す -->
+					<div class="titleContainerBase">
+					  <div class="titleContainer" id="news_title_{{news.id}}">
+						<span class="switch" ng-click="toggleListDetail(news.id)"><span class="inner">{{news.title}} ({{news.date}})</span></span>
+					  </div>
+					</div>
+					<!-- 5階層目（News詳細） -->
+					<div id="news_{{news.id}}" class="hide">
+					  <ul class="leaves">
+						<li class="description">
+						  <p class="meta" ng-bind-html-unsafe="listDetails[news.id].body"></p>
+						</li>
+					  </ul>
+					</div>
+					<!-- /5階層目（News詳細） -->
+				  </li>
+				</ul>
+
+			  </li>
+			</ul>
+		  </li>
+
+		  <li>
+			<div class="titleContainerBase">
+			  <div class="titleContainer" id="news_section_title">
+				<a href="http://www.facebook.com/actp9704" target="_blank">
+				  <span class="switch"><span class="inner">Facebook</span></span>
+				</a>
+			  </div>
+			</div>
+		  </li>
+
+		</ul>
+	  </li>
+	</ul>
+
+
+	<script type="text/javascript">
+	  var indexes = {
+		'ja': {
+	      'works': 
+[
+	{
+	  "id": "300",
+	  "name": "STUSSY Harajuku Chapter"
+	  ,"year": "2018"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "202",
+	  "name": "三田綱町の家"
+	  ,"year": "2018"
+	  ,"purpose": "住宅"
+	  ,"categories": ["Office"]
+	}
+,	{
+	  "id": "211",
+	  "name": "SONY PCL Office"
+	  ,"year": "2018"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["Office"]
+	}
+,	{
+	  "id": "193",
+	  "name": "EXTRA BUTTER NEW YORK"
+	  ,"year": "2017"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "197",
+	  "name": "retaW store TSUBAME"
+	  ,"year": "2017"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "205",
+	  "name": "AURALEE"
+	  ,"year": "2017"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "191",
+	  "name": "船橋の家"
+	  ,"year": "2017"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "176",
+	  "name": "SOPH. GINZA"
+	  ,"year": "2017"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "180",
+	  "name": "大吉"
+	  ,"year": "2016"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "190",
+	  "name": "It's a Sony展"
+	  ,"year": "2016"
+	  ,"purpose": "Exhibition"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "187",
+	  "name": "SOPH. HIROSHIMA"
+	  ,"year": "2016"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "188",
+	  "name": "retaW store Harajuku"
+	  ,"year": "2016"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "158",
+	  "name": "The Mass"
+	  ,"year": "2016"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "185",
+	  "name": "Sony Innovation Lounge"
+	  ,"year": "2016"
+	  ,"purpose": "コンセプトスペース"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "182",
+	  "name": "THE PARK・ING GINZA"
+	  ,"year": "2016"
+	  ,"purpose": "コンセプトスペース"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "184",
+	  "name": "SOPH. ROPPONGI HILLS"
+	  ,"year": "2016"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "164",
+	  "name": "SOPH. DAINAGOYA BUILDING"
+	  ,"year": "2016"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "145",
+	  "name": "尾山台の家"
+	  ,"year": "2015"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "174",
+	  "name": "The Mass Viewing Room"
+	  ,"year": "2015"
+	  ,"purpose": "other"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "179",
+	  "name": "Kaikai Kiki Kyoto Office"
+	  ,"year": "2015"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "181",
+	  "name": "PONCOTAN Kaikai Kiki Nakano Anime Studio"
+	  ,"year": "2015"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "200",
+	  "name": "SOPH. SAPPORO STELLAR PLACE"
+	  ,"year": "2015"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "157",
+	  "name": "Origami office"
+	  ,"year": "2015"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "171",
+	  "name": "SOPH. IKEBUKURO PARCO"
+	  ,"year": "2015"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "169",
+	  "name": "A+S"
+	  ,"year": "2015"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "144",
+	  "name": "深谷の家"
+	  ,"year": "2015"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "152",
+	  "name": "鹿屋の家"
+	  ,"year": "2014"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "160",
+	  "name": "SOPH. SAPPORO"
+	  ,"year": "2014"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "153",
+	  "name": "SOPH. office"
+	  ,"year": "2014"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "147",
+	  "name": "the POOL aoyama"
+	  ,"year": "2014"
+	  ,"purpose": "コンセプトスペース"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "117",
+	  "name": "代沢の家"
+	  ,"year": "2013"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "111",
+	  "name": "三宿の家Ⅱ"
+	  ,"year": "2013"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "139",
+	  "name": "FC24 DENTAL STORE"
+	  ,"year": "2013"
+	  ,"purpose": "クリニック"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "131",
+	  "name": "Detroit-Superior Bridge Ribbon Project"
+	  ,"year": "2012"
+	  ,"purpose": "橋梁"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "129",
+	  "name": "SOPH. HANKYU MEN'S OSAKA"
+	  ,"year": "2012"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "110",
+	  "name": "なんばグランド花月ビル"
+	  ,"year": "2012"
+	  ,"purpose": "複合施設"
+	  ,"categories": ["others","commercial"]
+	}
+,	{
+	  "id": "122",
+	  "name": "SOPH. KYOTO"
+	  ,"year": "2012"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "121",
+	  "name": "Hidari Zingaro Taipei"
+	  ,"year": "2011"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "118",
+	  "name": "Oz Zingaro"
+	  ,"year": "2011"
+	  ,"purpose": "ギャラリー、ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "119",
+	  "name": "SOPH. HANKYU MEN'S TOKYO"
+	  ,"year": "2011"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "095",
+	  "name": "秋谷の家"
+	  ,"year": "2011"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "107",
+	  "name": "川崎歯科医院"
+	  ,"year": "2011"
+	  ,"purpose": "クリニック"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "115",
+	  "name": "pixiv Zingaro"
+	  ,"year": "2011"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "113",
+	  "name": "PRISMA"
+	  ,"year": "2011"
+	  ,"purpose": "レストラン"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "109",
+	  "name": "吉本興業株式会社 大阪本部"
+	  ,"year": "2010"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "105",
+	  "name": "SOPH. HONG KONG"
+	  ,"year": "2010"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "108",
+	  "name": "NSW at HEAD PORTER PLUS"
+	  ,"year": "2010"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "102",
+	  "name": "Kaikai Kiki Gallery Taipei"
+	  ,"year": "2010"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "106",
+	  "name": "Write The Future"
+	  ,"year": "2010"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "104",
+	  "name": "Hidari Zingaro"
+	  ,"year": "2010"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "089",
+	  "name": "吉本興業株式会社 東京本部 (二期工事)"
+	  ,"year": "2010"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "101",
+	  "name": "SOPH. FUKUOKA PARCO"
+	  ,"year": "2010"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "081",
+	  "name": "菊池の家 (二期工事)"
+	  ,"year": "2008"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "083",
+	  "name": "NSW STORE (NIKE sportswear)"
+	  ,"year": "2008"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "069",
+	  "name": "伊豆高原の家"
+	  ,"year": "2008"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "082",
+	  "name": "Kaikai Zingaro"
+	  ,"year": "2008"
+	  ,"purpose": "ギャラリー"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "080",
+	  "name": "吉本興業株式会社 東京本部"
+	  ,"year": "2008"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "079",
+	  "name": "SOPH. OSAKA"
+	  ,"year": "2008"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "057",
+	  "name": "新川の家"
+	  ,"year": "2008"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "078",
+	  "name": "みなかみプロジェクト"
+	  ,"year": "2007"
+	  ,"purpose": "project"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "075",
+	  "name": "SOPH. KANAZAWA"
+	  ,"year": "2007"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "073",
+	  "name": "SOPH. HIROSHIMA"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "074",
+	  "name": "BURTON FLAGSHIP STORE TOKYO"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "138",
+	  "name": "代官山の家"
+	  ,"year": "2006"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "070",
+	  "name": "Kaikai Kiki MOTOAZABU"
+	  ,"year": "2006"
+	  ,"purpose": "オフィス、ギャラリー"
+	  ,"categories": ["commercial","office"]
+	}
+,	{
+	  "id": "072",
+	  "name": "A.P.C. FEMME DAIKANYAMA"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "071",
+	  "name": "東青山"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "065",
+	  "name": "Agasajo"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "064",
+	  "name": "SOPH. SENDAI"
+	  ,"year": "2006"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "047",
+	  "name": "岡本の家"
+	  ,"year": "2006"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "063",
+	  "name": "SAMURAI NISHIAZABU"
+	  ,"year": "2005"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "062",
+	  "name": "A.P.C. KYOTO"
+	  ,"year": "2005"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "061",
+	  "name": "菊池の家"
+	  ,"year": "2005"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "060",
+	  "name": "STUSSY SHIBUYA"
+	  ,"year": "2005"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "056",
+	  "name": "SOPH. MATSUYAMA"
+	  ,"year": "2005"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "054",
+	  "name": "SOPH. NIIGATA"
+	  ,"year": "2004"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "051",
+	  "name": "F.C.R.B. Stadium Project 展"
+	  ,"year": "2004"
+	  ,"purpose": "展覧会"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "053",
+	  "name": "SAMURAI JINGUMAE"
+	  ,"year": "2004"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "034",
+	  "name": "三宿の家"
+	  ,"year": "2004"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "043",
+	  "name": "材木座の家"
+	  ,"year": "2004"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "050",
+	  "name": "SOPH. NAGOYA"
+	  ,"year": "2004"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "048",
+	  "name": "SOPH. FUKUOKA"
+	  ,"year": "2003"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "031",
+	  "name": "赤坂の家 (シルクビル)"
+	  ,"year": "2003"
+	  ,"purpose": "テナント兼住居ビル"
+	  ,"categories": ["commercial","house","others"]
+	}
+,	{
+	  "id": "045",
+	  "name": "SOPH. office annex"
+	  ,"year": "2003"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "042",
+	  "name": "東屋"
+	  ,"year": "2003"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "049",
+	  "name": "南方熊楠研究所プロジェクト"
+	  ,"year": "2003"
+	  ,"purpose": "project"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "038",
+	  "name": "uehara 5 factories"
+	  ,"year": "2003"
+	  ,"purpose": "プロジェクト"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "035",
+	  "name": "Harajuku Advertisement Architecture Project"
+	  ,"year": "2002"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "040",
+	  "name": "Tycoon Graphics"
+	  ,"year": "2002"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "041",
+	  "name": "hp annex"
+	  ,"year": "2002"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "037",
+	  "name": "HIGHBRID"
+	  ,"year": "2001"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "033",
+	  "name": "HANAの家"
+	  ,"year": "2001"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "028",
+	  "name": "HEAD  PORTER  PLUS"
+	  ,"year": "2001"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "136",
+	  "name": "T.D.W.椅子 展　"
+	  ,"year": "2001"
+	  ,"purpose": "exhibition"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "032",
+	  "name": "A.P.C. MARUNOUCHI"
+	  ,"year": "2001"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "029",
+	  "name": "SOPH. office"
+	  ,"year": "2001"
+	  ,"purpose": "オフィス"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "036",
+	  "name": "nakEd bunch"
+	  ,"year": "2001"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "027",
+	  "name": "F.C.R.B. Stadium Project"
+	  ,"year": "2000"
+	  ,"purpose": "サッカースタジアム"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "026",
+	  "name": "SHIMA KICHIJOJI"
+	  ,"year": "2000"
+	  ,"purpose": "美容院"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "010",
+	  "name": "松濤の家"
+	  ,"year": "2000"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "025",
+	  "name": "SHIMA GINZA"
+	  ,"year": "2000"
+	  ,"purpose": "美容院"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "021",
+	  "name": "SOPH. TOKYO"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "023",
+	  "name": "INSTANT KARMA"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "022",
+	  "name": "INFACES paradis"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "016",
+	  "name": "storage"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "020",
+	  "name": "BUFFALO"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "004",
+	  "name": "室町の家"
+	  ,"year": "1999"
+	  ,"purpose": "住宅"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "019",
+	  "name": "SHIMA FUKUOKA"
+	  ,"year": "1999"
+	  ,"purpose": "美容院"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "015",
+	  "name": "UNDER COVER TOYAMA"
+	  ,"year": "1999"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "003",
+	  "name": "PROTECT bldg."
+	  ,"year": "1999"
+	  ,"purpose": "オフィスビル"
+	  ,"categories": ["commercial","office"]
+	}
+,	{
+	  "id": "009",
+	  "name": "HEAD PORTER"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "006",
+	  "name": "theory"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "014",
+	  "name": "UNDER COVER FUKUOKA"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "008",
+	  "name": "SUPREME OSAKA"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "007",
+	  "name": "SUPREME TOKYO"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "011",
+	  "name": "TRIPLEX"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "013",
+	  "name": "READY MADE TOYAMA"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "012",
+	  "name": "READY MADE FUKUOKA"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "005",
+	  "name": "READY MADE TOKYO"
+	  ,"year": "1998"
+	  ,"purpose": "ショップ"
+	  ,"categories": ["commercial"]
+	}
+]
+
+
+
+,
+		  'publications': 
+[
+	{
+	  "id": "005",
+	  "name": "THE ARCHETYPE (P.4-5)"
+	}
+,	{
+	  "id": "004",
+	  "name": "球体 3"
+	}
+,	{
+	  "id": "011",
+	  "name": "F.C.R.B. Stadium Project"
+	}
+]
+
+
+
+,
+	      'products': 
+[
+	{
+	  "id": "002",
+	  "name": "ACTP01 箱 / ACTP01’箱"
+	}
+,	{
+	  "id": "003",
+	  "name": "ACTP03 机"
+	}
+,	{
+	  "id": "004",
+	  "name": "ACTP04 F.C.R.B.Stadium / 灰皿"
+	}
+,	{
+	  "id": "006",
+	  "name": "ACTP05 引手一号"
+	}
+,	{
+	  "id": "007",
+	  "name": "ACTP06 引手二号"
+	}
+,	{
+	  "id": "005",
+	  "name": "ACTP08 引戸用鍵"
+	}
+,	{
+	  "id": "008",
+	  "name": "ACTP09 取手一号"
+	}
+,	{
+	  "id": "009",
+	  "name": "ACTP13 屏風"
+	}
+,	{
+	  "id": "010",
+	  "name": "ACTP15 靴置 自立型 二段"
+	}
+,	{
+	  "id": "011",
+	  "name": "ACTP16 傘立 角型"
+	}
+,	{
+	  "id": "012",
+	  "name": "ACTP17 傘立 丸型"
+	}
+,	{
+	  "id": "013",
+	  "name": "ACTP18 ハンガーラック 一号 / ACTP19 ハンガーラック 二号"
+	}
+]
+
+
+
+
+		},
+		'en': {
+	      'works': 
+[
+	{
+	  "id": "300",
+	  "name": "STUSSY Harajuku Chapter"
+	  ,"year": "2018"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "202",
+	  "name": "House in Mitatsunamachi"
+	  ,"year": "2018"
+	  ,"purpose": "house"
+	  ,"categories": ["Office"]
+	}
+,	{
+	  "id": "211",
+	  "name": "SONY PCL Office"
+	  ,"year": "2018"
+	  ,"purpose": "Office"
+	  ,"categories": ["Office"]
+	}
+,	{
+	  "id": "193",
+	  "name": "EXTRA BUTTER NEW YORK"
+	  ,"year": "2017"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "197",
+	  "name": "retaW store TSUBAME"
+	  ,"year": "2017"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "205",
+	  "name": "AURALEE"
+	  ,"year": "2017"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "191",
+	  "name": "House in Funabashi"
+	  ,"year": "2017"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "176",
+	  "name": "SOPH. GINZA"
+	  ,"year": "2017"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "180",
+	  "name": "DAIKICHI"
+	  ,"year": "2016"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "190",
+	  "name": "It's a Sony Exhibition"
+	  ,"year": "2016"
+	  ,"purpose": "Exhibition"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "187",
+	  "name": "SOPH. HIROSHIMA"
+	  ,"year": "2016"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "188",
+	  "name": "retaW store Harajuku"
+	  ,"year": "2016"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "158",
+	  "name": "The Mass"
+	  ,"year": "2016"
+	  ,"purpose": "gallery"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "185",
+	  "name": "Sony Innovation Lounge"
+	  ,"year": "2016"
+	  ,"purpose": "Concept Space"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "182",
+	  "name": "THE PARK・ING GINZA"
+	  ,"year": "2016"
+	  ,"purpose": "Concept Space"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "184",
+	  "name": "SOPH. ROPPONGI HILLS"
+	  ,"year": "2016"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "164",
+	  "name": "SOPH. DAINAGOYA BUILDING"
+	  ,"year": "2016"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "145",
+	  "name": "House in Oyamadai"
+	  ,"year": "2015"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "174",
+	  "name": "The Mass Viewing Room"
+	  ,"year": "2015"
+	  ,"purpose": "other"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "179",
+	  "name": "Kaikai Kiki Kyoto Office"
+	  ,"year": "2015"
+	  ,"purpose": "Office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "181",
+	  "name": "PONCOTAN Kaikai Kiki Nakano Anime Studio"
+	  ,"year": "2015"
+	  ,"purpose": "Office"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "200",
+	  "name": "SOPH. SAPPORO STELLAR PLACE"
+	  ,"year": "2015"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "157",
+	  "name": "Origami office"
+	  ,"year": "2015"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "171",
+	  "name": "SOPH. IKEBUKURO PARCO"
+	  ,"year": "2015"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "169",
+	  "name": "A+S"
+	  ,"year": "2015"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "144",
+	  "name": "House in Fukaya"
+	  ,"year": "2015"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "152",
+	  "name": "House in Kanoya"
+	  ,"year": "2014"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "160",
+	  "name": "SOPH. SAPPORO"
+	  ,"year": "2014"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "153",
+	  "name": "SOPH. office"
+	  ,"year": "2014"
+	  ,"purpose": "office"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "147",
+	  "name": "the POOL aoyama"
+	  ,"year": "2014"
+	  ,"purpose": "concept space"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "117",
+	  "name": "House in Daizawa"
+	  ,"year": "2013"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "111",
+	  "name": "House in Mishuku II"
+	  ,"year": "2013"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "139",
+	  "name": "FC24 DENTAL STORE"
+	  ,"year": "2013"
+	  ,"purpose": "clinic"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "131",
+	  "name": "Detroit-Superior Bridge Ribbon Project"
+	  ,"year": "2012"
+	  ,"purpose": "Bridge"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "129",
+	  "name": "SOPH. HANKYU MEN'S OSAKA"
+	  ,"year": "2012"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "110",
+	  "name": "Nanba Grand Kagetsu Bldg."
+	  ,"year": "2012"
+	  ,"purpose": "Complex facility"
+	  ,"categories": ["others","commercial"]
+	}
+,	{
+	  "id": "122",
+	  "name": "SOPH. KYOTO"
+	  ,"year": "2012"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "121",
+	  "name": "Hidari Zingaro Taipei"
+	  ,"year": "2011"
+	  ,"purpose": "gallery"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "118",
+	  "name": "Oz Zingaro"
+	  ,"year": "2011"
+	  ,"purpose": "gallery, shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "119",
+	  "name": "SOPH. HANKYU MEN'S TOKYO"
+	  ,"year": "2011"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "095",
+	  "name": "House in Akiya"
+	  ,"year": "2011"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "107",
+	  "name": "Kawasaki Dental Clinic"
+	  ,"year": "2011"
+	  ,"purpose": "clinic"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "115",
+	  "name": "pixiv Zingaro"
+	  ,"year": "2011"
+	  ,"purpose": "gallery"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "113",
+	  "name": "PRISMA"
+	  ,"year": "2011"
+	  ,"purpose": "restaurant"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "109",
+	  "name": "YOSHIMOTO KOGYO CO.,LTD. Osaka head office"
+	  ,"year": "2010"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "105",
+	  "name": "SOPH. HONG KONG"
+	  ,"year": "2010"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "108",
+	  "name": "NSW at HEAD PORTER PLUS"
+	  ,"year": "2010"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "102",
+	  "name": "Kaikai Kiki Gallery Taipei"
+	  ,"year": "2010"
+	  ,"purpose": "gallery"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "106",
+	  "name": "Write The Future"
+	  ,"year": "2010"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "104",
+	  "name": "Hidari Zingaro"
+	  ,"year": "2010"
+	  ,"purpose": "gallary"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "089",
+	  "name": "YOSHIMOTO KOGYO CO.,LTD. Tokyo head office (the second phase of construction)"
+	  ,"year": "2010"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "101",
+	  "name": "SOPH. FUKUOKA PARCO"
+	  ,"year": "2010"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "081",
+	  "name": "House in Kikuchi (the second phase of construction)"
+	  ,"year": "2008"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "083",
+	  "name": "NSW STORE (NIKE sportswear)"
+	  ,"year": "2008"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "069",
+	  "name": "House in Izu kougen"
+	  ,"year": "2008"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "082",
+	  "name": "Kaikai Zingaro"
+	  ,"year": "2008"
+	  ,"purpose": "gallary"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "080",
+	  "name": "YOSHIMOTO KOGYO CO.,LTD. Tokyo head office"
+	  ,"year": "2008"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "079",
+	  "name": "SOPH. OSAKA"
+	  ,"year": "2008"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "057",
+	  "name": "House in Shinkawa"
+	  ,"year": "2008"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "078",
+	  "name": "project of Minakami"
+	  ,"year": "2007"
+	  ,"purpose": "project"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "075",
+	  "name": "SOPH. KANAZAWA"
+	  ,"year": "2007"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "073",
+	  "name": "SOPH. HIROSHIMA"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "074",
+	  "name": "BURTON FLAGSHIP STORE TOKYO"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "138",
+	  "name": "House in Daikanyama"
+	  ,"year": "2006"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "070",
+	  "name": "Kaikai Kiki MOTOAZABU"
+	  ,"year": "2006"
+	  ,"purpose": "office,gallery"
+	  ,"categories": ["commercial","office"]
+	}
+,	{
+	  "id": "072",
+	  "name": "A.P.C. FEMME DAIKANYAMA"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "071",
+	  "name": "higashiaoyama"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "065",
+	  "name": "Agasajo"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "064",
+	  "name": "SOPH. SENDAI"
+	  ,"year": "2006"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "047",
+	  "name": "House in Okamoto"
+	  ,"year": "2006"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "063",
+	  "name": "SAMURAI NISHIAZABU"
+	  ,"year": "2005"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "062",
+	  "name": "A.P.C. KYOTO"
+	  ,"year": "2005"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "061",
+	  "name": "House in Kikuchi"
+	  ,"year": "2005"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "060",
+	  "name": "STUSSY SHIBUYA"
+	  ,"year": "2005"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "056",
+	  "name": "SOPH. MATSUYAMA"
+	  ,"year": "2005"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "054",
+	  "name": "SOPH. NIIGATA"
+	  ,"year": "2004"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "051",
+	  "name": "\"F.C.R.B. Stadium Project\" Exhibition"
+	  ,"year": "2004"
+	  ,"purpose": "exhibition"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "053",
+	  "name": "SAMURAI JINGUMAE"
+	  ,"year": "2004"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "034",
+	  "name": "House in Mishuku"
+	  ,"year": "2004"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "043",
+	  "name": "House in Zaimokuza"
+	  ,"year": "2004"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "050",
+	  "name": "SOPH. NAGOYA"
+	  ,"year": "2004"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "048",
+	  "name": "SOPH. FUKUOKA"
+	  ,"year": "2003"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "031",
+	  "name": "House in Akasaka (Silk Building)"
+	  ,"year": "2003"
+	  ,"purpose": "office and residence building"
+	  ,"categories": ["commercial","house","others"]
+	}
+,	{
+	  "id": "045",
+	  "name": "SOPH. office annex"
+	  ,"year": "2003"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "042",
+	  "name": "AZMAYA"
+	  ,"year": "2003"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "049",
+	  "name": "Kumagusu Minakata Lab. Project"
+	  ,"year": "2003"
+	  ,"purpose": "project"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "038",
+	  "name": "uehara 5 factories"
+	  ,"year": "2003"
+	  ,"purpose": "project"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "035",
+	  "name": "Harajuku Advertisement Architecture Project"
+	  ,"year": "2002"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "040",
+	  "name": "Tycoon Graphics"
+	  ,"year": "2002"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "041",
+	  "name": "hp annex"
+	  ,"year": "2002"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "037",
+	  "name": "HIGHBRID"
+	  ,"year": "2001"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "033",
+	  "name": "House in HANA"
+	  ,"year": "2001"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "028",
+	  "name": "HEAD  PORTER  PLUS"
+	  ,"year": "2001"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "136",
+	  "name": "T.D.W.Chair Exhibition"
+	  ,"year": "2001"
+	  ,"purpose": "exhibition"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "032",
+	  "name": "A.P.C. MARUNOUCHI"
+	  ,"year": "2001"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "029",
+	  "name": "SOPH. office"
+	  ,"year": "2001"
+	  ,"purpose": "office"
+	  ,"categories": ["office"]
+	}
+,	{
+	  "id": "036",
+	  "name": "nakEd bunch"
+	  ,"year": "2001"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "027",
+	  "name": "F.C.R.B. Stadium Project"
+	  ,"year": "2000"
+	  ,"purpose": "stadium for soccer"
+	  ,"categories": ["others"]
+	}
+,	{
+	  "id": "026",
+	  "name": "SHIMA KICHIJOJI"
+	  ,"year": "2000"
+	  ,"purpose": "hair salon"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "010",
+	  "name": "House in Shoto"
+	  ,"year": "2000"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "025",
+	  "name": "SHIMA GINZA"
+	  ,"year": "2000"
+	  ,"purpose": "hair salon"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "021",
+	  "name": "SOPH. TOKYO"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "023",
+	  "name": "INSTANT KARMA"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "022",
+	  "name": "INFACES paradis"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "016",
+	  "name": "storage"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "020",
+	  "name": "BUFFALO"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "004",
+	  "name": "House in Muromachi"
+	  ,"year": "1999"
+	  ,"purpose": "house"
+	  ,"categories": ["house"]
+	}
+,	{
+	  "id": "019",
+	  "name": "SHIMA FUKUOKA"
+	  ,"year": "1999"
+	  ,"purpose": "hair salon"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "015",
+	  "name": "UNDER COVER TOYAMA"
+	  ,"year": "1999"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "003",
+	  "name": "PROTECT bldg."
+	  ,"year": "1999"
+	  ,"purpose": "office building"
+	  ,"categories": ["commercial","office"]
+	}
+,	{
+	  "id": "009",
+	  "name": "HEAD PORTER"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "006",
+	  "name": "theory"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "014",
+	  "name": "UNDER COVER FUKUOKA"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "008",
+	  "name": "SUPREME OSAKA"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "007",
+	  "name": "SUPREME TOKYO"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "011",
+	  "name": "TRIPLEX"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "013",
+	  "name": "READY MADE TOYAMA"
+	  ,"year": "1998"
+	  ,"purpose": "Shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "012",
+	  "name": "READY MADE FUKUOKA"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+,	{
+	  "id": "005",
+	  "name": "READY MADE TOKYO"
+	  ,"year": "1998"
+	  ,"purpose": "shop"
+	  ,"categories": ["commercial"]
+	}
+]
+
+
+
+,
+		  'publications': 
+[
+	{
+	  "id": "005",
+	  "name": "THE ARCHETYPE (P.4-5)"
+	}
+,	{
+	  "id": "004",
+	  "name": "KYUTAI 3"
+	}
+,	{
+	  "id": "011",
+	  "name": "F.C.R.B. Stadium Project"
+	}
+]
+
+
+
+,
+	      'products': 
+[
+	{
+	  "id": "002",
+	  "name": "ACTP01 Box/ ACTP01’Box"
+	}
+,	{
+	  "id": "003",
+	  "name": "ACTP03 Desk"
+	}
+,	{
+	  "id": "004",
+	  "name": "ACTP04 F.C.R.B.Stadium / Ashtray"
+	}
+,	{
+	  "id": "006",
+	  "name": "ACTP05 Pull handle No.1"
+	}
+,	{
+	  "id": "007",
+	  "name": "ACTP06 Pull handle No.2"
+	}
+,	{
+	  "id": "005",
+	  "name": "ACTP08 Sliding door lock"
+	}
+,	{
+	  "id": "008",
+	  "name": "ACTP09 Handle No.1"
+	}
+,	{
+	  "id": "009",
+	  "name": "ACTP13 Folding screen"
+	}
+,	{
+	  "id": "010",
+	  "name": "ACTP15 Shoe rack (two‐stage)"
+	}
+,	{
+	  "id": "011",
+	  "name": "ACTP16 Umbrella stand（Square)"
+	}
+,	{
+	  "id": "012",
+	  "name": "ACTP17 Umbrella stand（Round)"
+	}
+,	{
+	  "id": "013",
+	  "name": "ACTP18 Hanger rack No.1 / ACTP19 Hanger rack No.2"
+	}
+]
+
+
+
+
+		}
+	  }
+	</script>
+
+
+</body>
+</html>
+
+
+
